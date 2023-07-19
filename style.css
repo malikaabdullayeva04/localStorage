@@ -1,0 +1,135 @@
+@import url(https://fonts.googleapis.com/css2?family=Satisfy&display=swap);
+
+body {
+  font-family: 'Satisfy', handwriting;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html,
+body {
+  height: 100%;
+}
+
+body {
+  background-color: #4c4177;
+  background-size: cover;
+  background-image: url("./img/6BV3Er.jpg");
+ 
+}
+
+.form-area,
+.counter,
+.complete {
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: #1d3647;
+  background-color: rgb(77, 83, 137);
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10%;
+}
+.counter1{
+  color: hwb(0 87% 3%);
+  font-size: 40px;
+  border:none;
+  letter-spacing: 2px;
+  display: flex;
+  justify-content: center;
+text-align: center;
+  align-items: center;
+  
+
+}
+.input{
+  border-radius:5px;
+  border: none;
+}
+
+
+.form-area input {
+  display: block;
+  margin: 15px;
+  padding: 10px;
+  margin-left: 0px;
+  margin-right: 0px;
+  width: 300px;
+}
+
+.form-area {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+button {
+  background-color: rgb(6, 34, 14);
+  width: 100%;
+  padding: 15px;
+  border: none;
+  color: white;
+  font-weight: bold;
+  font-size: 16px;
+  border-radius: 5px;
+}
+
+button:hover {
+  background-color: rgb(84, 130, 173);
+  cursor: pointer;
+}
+
+.counter h1 {
+  text-align: center;
+}
+
+li {
+  display: inline-block;
+  font-size: 30px;
+  list-style-type: none;
+  padding: 10px;
+  text-transform: uppercase;
+  color: rgb(27, 27, 27);
+}
+
+li span {
+  display: block;
+  font-size: 80px;
+  text-align: center;
+}
+
+.complete-title {
+  animation: complete 4s infinite;
+  text-align: center;
+}
+
+@keyframes complete {
+  0% {
+    color: red;
+  }
+
+  25% {
+    color: yellow;
+    transform: rotate(5deg);
+  }
+
+  50% {
+    color: green;
+    transform: scale(1.2);
+  }
+
+  75% {
+    color: rgb(111, 111, 152);
+    transform: rotate(-5deg);
+  }
+
+  100% {
+    color: rgb(103, 57, 57);
+    transform: rotate(0deg);
+  }
+}
+
